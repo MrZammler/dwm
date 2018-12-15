@@ -58,6 +58,10 @@ static const Layout layouts[] = {
 /* commands */
 static const char *rofiruncmd[] = {"rofi", "-show", "run", "-theme", "Arc", "-lines", "20", "-opacity", "20", "-font", "Inconsolata 10", NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
+static const char *vol_up[]  = { "/home/evas/bin/vol_up.sh", NULL };
+static const char *vol_down[]  = { "/home/evas/bin/vol_down.sh", NULL };
+static const char *suspend_monitor[]  = { "/home/evas/bin/suspend_monitor", NULL };
+static const char *suspend[]  = { "sudo", "/usr/sbin/pm-suspend", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -86,6 +90,10 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	{ MODKEY,                       XK_l,      x_nexttag,      {0} },
         { MODKEY,                       XK_j,      x_prevtag,      {0} },
+	{ MODKEY,                       XK_F12,    spawn,          {.v = vol_up } },
+	{ MODKEY,                       XK_F11,    spawn,          {.v = vol_down } },
+	{ MODKEY,                       XK_F2,     spawn,          {.v = suspend_monitor } },
+	{ MODKEY,                       XK_F1,     spawn,          {.v = suspend } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
