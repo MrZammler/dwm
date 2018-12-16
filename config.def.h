@@ -18,7 +18,7 @@ static const char *colors[][3]      = {
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
 	[SchemeSel]  = { col_gray4, col_cyan,  col_orange  },
 };
-static const unsigned int gappx       = 0;
+static const unsigned int gappx       = 10;
 static const unsigned int gapp_singx  = 300;
 static const unsigned int gapp_singy  = 50;
 
