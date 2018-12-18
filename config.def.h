@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
@@ -79,6 +79,9 @@ static const char *vol_up[]  = { "/home/evas/bin/vol_up.sh", NULL };
 static const char *vol_down[]  = { "/home/evas/bin/vol_down.sh", NULL };
 static const char *suspend_monitor[]  = { "/home/evas/bin/suspend_monitor", NULL };
 static const char *suspend[]  = { "sudo", "/usr/sbin/pm-suspend", NULL };
+static const char *mpd_toggle[]  = { "mpc", "toggle", NULL };
+static const char *mpd_next[]  = { "mpc", "next", NULL };
+static const char *mpd_prev[]  = { "mpc", "prev", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -111,6 +114,10 @@ static Key keys[] = {
 	{ MODKEY,                       XK_F11,    spawn,          {.v = vol_down } },
 	{ MODKEY,                       XK_F2,     spawn,          {.v = suspend_monitor } },
 	{ MODKEY,                       XK_F1,     spawn,          {.v = suspend } },
+	{ MODKEY,                       XK_F1,     spawn,          {.v = suspend } },
+	{ MODKEY,                       XK_p,      spawn,          {.v = mpd_toggle } },
+	{ MODKEY,                       XK_bracketright,      spawn,          {.v = mpd_next } },
+	{ MODKEY,                       XK_bracketleft,      spawn,          {.v = mpd_prev } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
