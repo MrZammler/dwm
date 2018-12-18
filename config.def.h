@@ -18,10 +18,23 @@ static const char *colors[][3]      = {
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
 	[SchemeSel]  = { col_gray4, col_cyan,  col_orange  },
 };
+
 static const unsigned int gappx       = 10;
 static const unsigned int gapp_singx  = 300;
 static const unsigned int gapp_singy  = 50;
 
+/* static unsigned int baralpha = 0xd0; */
+/* static unsigned int borderalpha = OPAQUE; */
+
+#define baralpha 0x00
+#define borderalpha OPAQUE
+
+
+static const unsigned int alphas[][3]      = {
+	/*               fg      bg        border     */
+	[SchemeNorm] = { OPAQUE, baralpha, borderalpha },
+	[SchemeSel]  = { OPAQUE, baralpha, borderalpha },
+};
 
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
