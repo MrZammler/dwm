@@ -19,9 +19,9 @@ static const char *colors[][3]      = {
 	[SchemeSel]  = { col_gray4, col_cyan,  col_orange  },
 };
 
-static const unsigned int gappx       = 10;
-static const unsigned int gapp_singx  = 300;
-static const unsigned int gapp_singy  = 50;
+/* static const unsigned int gappx       = 10; */
+/* static const unsigned int gapp_singx  = 300; */
+/* static const unsigned int gapp_singy  = 50; */
 
 /* static unsigned int baralpha = 0xd0; */
 /* static unsigned int borderalpha = OPAQUE; */
@@ -82,6 +82,7 @@ static const char *suspend[]  = { "sudo", "/usr/sbin/pm-suspend", NULL };
 static const char *mpd_toggle[]  = { "mpc", "toggle", NULL };
 static const char *mpd_next[]  = { "mpc", "next", NULL };
 static const char *mpd_prev[]  = { "mpc", "prev", NULL };
+static const char *notif_info[]  = { "/home/evas/bin/notif_info", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -118,6 +119,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_p,      spawn,          {.v = mpd_toggle } },
 	{ MODKEY,                       XK_bracketright,      spawn,          {.v = mpd_next } },
 	{ MODKEY,                       XK_bracketleft,      spawn,          {.v = mpd_prev } },
+	{ MODKEY,                       XK_s,      spawn,          {.v = notif_info } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
