@@ -23,7 +23,14 @@ static const char *colors[][3]      = {
 /* static const unsigned int gapp_singx  = 300; */
 /* static const unsigned int gapp_singy  = 50; */
 
+#ifdef winterland
+static const unsigned int gappx       = 3;
+#endif /* winterland */
+
+#ifdef sylvester
 static const unsigned int gappx       = 0;
+#endif /* sylvester */
+
 static const unsigned int gapp_singx  = 0;
 static const unsigned int gapp_singy  = 0;
 
