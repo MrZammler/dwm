@@ -23,6 +23,10 @@ static const char *colors[][3]      = {
 /* static const unsigned int gapp_singx  = 300; */
 /* static const unsigned int gapp_singy  = 50; */
 
+static const unsigned int gappx       = 0;
+static const unsigned int gapp_singx  = 0;
+static const unsigned int gapp_singy  = 0;
+
 /* static unsigned int baralpha = 0xd0; */
 /* static unsigned int borderalpha = OPAQUE; */
 
