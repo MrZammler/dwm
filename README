@@ -1,48 +1,30 @@
-dwm - dynamic window manager
-============================
+## Synopsis
+
+This is my local "fork" of dwm.
+
 dwm is an extremely fast, small, and dynamic window manager for X.
 
+For more information. visit: https://dwm.suckless.org/
 
-Requirements
-------------
-In order to build dwm you need the Xlib header files.
+## Configuration
 
+The configuration of dwm is done by creating a custom config.h and (re)compiling the source code. This fork is configured for use with a Poker 3 keyboard. Main points of config:
 
-Installation
-------------
-Edit config.mk to match your local setup (dwm is installed into
-the /usr/local namespace by default).
-
-Afterwards enter the following command to build and install dwm (if
-necessary as root):
-
-    make clean install
+| Key           | Operation                   | 
+| ------------- |:----------------------------| 
+| Win-r         | run rofi                    | 
+| Win-Enter     | spawm a urxvt terminal      | 
+| Alt-Tab       | focus next window           | 
 
 
-Running dwm
------------
-Add the following line to your .xinitrc to start dwm using startx:
+## Patches
 
-    exec dwm
+Dwm can be extended with patches. It's main code only contains the bare essentials, so people tend to add a few of those. Since the patches (and configuration) alter the source code, each installation is unique and a fork of it's own. This fork contains the following patches:
 
-In order to connect dwm to a specific display, make sure that
-the DISPLAY environment variable is set correctly, e.g.:
-
-    DISPLAY=foo.bar:1 exec dwm
-
-(This will start dwm on display :1 of the host foo.bar.)
-
-In order to display status info in the bar, you can do something
-like this in your .xinitrc:
-
-    while xsetroot -name "`date` `uptime | sed 's/.*,//'`"
-    do
-    	sleep 1
-    done &
-    exec dwm
+dwm-alpha
+dwm-pertag
+dwm-uselessgap
 
 
-Configuration
--------------
-The configuration of dwm is done by creating a custom config.h
-and (re)compiling the source code.
+
+
