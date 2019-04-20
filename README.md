@@ -6,6 +6,10 @@ dwm is an extremely fast, small, and dynamic window manager for X.
 
 For more information. visit: https://dwm.suckless.org/
 
+There are many tiling window managers, and I tried a few. dwm ticks almost all the boxes I wanted. Let's me have Alt-Tab to cycle through windows on a desktop (i3 doesn't want that), is not picky about full screen youtube/mplayer windows (xmonad has a thing there), has a usable bar (bspwm doesn't).
+
+It's main tiling algorithm is a master pane on the left and stacked windows on the right.
+
 ## Configuration
 
 The configuration of dwm is done by creating a custom config.h and (re)compiling the source code. This fork is configured for use with a Poker 3 keyboard. Main points of config:
@@ -15,7 +19,15 @@ Key|Operation
 Win-r|run rofi 
 Win-Enter|spawm a urxvt terminal
 Alt-Tab|focus next window
-
+Win-Shift-l|Change master/stack ration (more master)
+Win-Shift-j|Change master/stack ration (less master)
+Win-Shift-Enter|Get the focuced window to master area
+Win-Tab|focus previous workspace
+Win-q|Kill focused window
+Win-z|Set tiled layout
+Win-x|Set floating layout
+Win-c|Set monocle layout
+Win-0|View all open windows
 
 ## Patches
 
