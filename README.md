@@ -10,11 +10,11 @@ For more information. visit: https://dwm.suckless.org/
 
 The configuration of dwm is done by creating a custom config.h and (re)compiling the source code. This fork is configured for use with a Poker 3 keyboard. Main points of config:
 
-| Key           | Operation                   | 
-| ------------- |:----------------------------| 
-| Win-r         | run rofi                    | 
-| Win-Enter     | spawm a urxvt terminal      | 
-| Alt-Tab       | focus next window           | 
+Key|Operation 
+--- | ---
+Win-r|run rofi 
+Win-Enter|spawm a urxvt terminal
+Alt-Tab|focus next window
 
 
 ## Patches
