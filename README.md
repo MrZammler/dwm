@@ -40,6 +40,8 @@ dwm-alpha
 dwm-pertag
 dwm-uselessgap
 
+## Custom stuff
 
+There are also two variables, not found in dwm or in other patches. gapp_singx and gapp_singy will set a gap when there is only one window open, or in monocle mode. This was because I wanted to have a single window in the center of my screen rather than occuping all of the 1440p monitor.
 
 
