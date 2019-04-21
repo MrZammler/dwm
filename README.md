@@ -22,12 +22,15 @@ Alt-Tab|focus next window
 Win-Shift-l|Change master/stack ration (more master)
 Win-Shift-j|Change master/stack ration (less master)
 Win-Shift-Enter|Get the focuced window to master area
-Win-Tab|focus previous workspace
+Win-Tab|Focus previous workspace (tag)
 Win-q|Kill focused window
 Win-z|Set tiled layout
 Win-x|Set floating layout
 Win-c|Set monocle layout
 Win-0|View all open windows
+Win-l|View next workspace (tag)
+Win-j|View previous workspace (tag)
+Win-NUM|Switch to NUM workspace (tag)
 
 ## Patches
 
