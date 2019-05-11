@@ -31,6 +31,10 @@ static const unsigned int gappx       = 0;
 static const unsigned int gappx       = 0;
 #endif /* sylvester */
 
+#ifdef telex
+static const unsigned int gappx       = 0;
+#endif /* telex */
+
 static const unsigned int gapp_singx  = 0;
 static const unsigned int gapp_singy  = 0;
 
