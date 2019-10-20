@@ -88,7 +88,7 @@ static const Layout layouts[] = {
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static const char *rofiruncmd[] = {"rofi", "-show", "run", "-theme", "Arc", "-lines", "20", "-opacity", "20", "-font", "Inconsolata 10", NULL };
+static const char *rofiruncmd[] = {"rofi", "-show", "run", "-theme", "Pop-Dark", "-lines", "20", "-opacity", "20", "-font", "Inconsolata 8", NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
 static const char *vol_up[]  = { "/home/evas/bin/vol_up.sh", NULL };
 static const char *vol_down[]  = { "/home/evas/bin/vol_down.sh", NULL };
